@@ -1,0 +1,65 @@
+<br>
+<h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 600;"> Java Based Quiz </h4>
+<div class="well well-lg" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 600;">
+	<form #exampleForm="ngForm" class="form form-horizontal" novalidate>
+  		<div [hidden] = "submitted" >
+			  <div class="radio-inline" *ngFor = "let query of quizList">
+				<br>
+				<p class="text-white bg-dark">{{query.queryid}}</p>
+				<p class="text-success">{{query.question}}</p>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="flexRadioDefault1"	
+					name="{{query.queryid}}" #ures.queryid value="{{query.option1}}" #ures.response (change)= "addCheckedResponse(query.queryid,$event.target.value)"> 
+					<label class="form-check-label" for="flexRadioDefault1">
+                       {{query.option1}}
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="flexRadioDefault2"
+						name="{{query.queryid}}" value="{{query.option2}}" (change)="addCheckedResponse(query.queryid,$event.target.value)">
+                    <label class="form-check-label" for="flexRadioDefault2">
+					{{query.option2}}
+					</label>
+				</div>
+				<div class="form-check">	
+					<input class="form-check-input" type="radio" id="flexRadioDefault3" 
+					name="{{query.queryid}}"  value="{{query.option3}}" (change)="addCheckedResponse(query.queryid,$event.target.value)">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                    {{query.option3}}
+					</label>
+				</div>
+				<div class="form-check">	
+					<input class="form-check-input" type="radio" id="flexRadioDefault4"
+					name="{{query.queryid}}" value="{{query.option4}}" (change)="addCheckedResponse(query.queryid,$event.target.value)">
+                    <label class="form-check-label" for="flexRadioDefault4">
+					{{query.option4}}
+				    </label>
+				</div>
+			</div>	
+				<br>
+				<br>
+			<div class="row">
+				<div class="col-sm-1">	
+			<button type="submit" class="btn btn-dark" (click)="submitForm(exampleForm)">Submit</button>
+			</div>
+			<div class="col-sm-3">
+			<button type="reset" class="btn btn-dark" (click)="resetForm(exampleForm)">Reset</button>
+			</div>
+			</div>
+  		</div>
+	</form>
+	<div *ngIf="submitted" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 600;">
+	<label >Review Responses:</label>
+	<ul *ngFor = "let res of respList">
+	<li>{{res.queryid}} : {{res.response}}</li>
+	<p class="text-white bg-success">Correct Answer: {{res.answer}}</p>
+	</ul>
+	<p class="text-white bg-dark">Your Score : {{score}}/15 </p>
+<p class="text-white bg-dark">Your Percantage : {{percent}}%</p>
+    <button type="button" class="btn btn-dark" routerLink="quiz">Retake</button>
+</div>
+	
+</div>
+<div class="conatiner">
+	<router-outlet></router-outlet>
+</div>

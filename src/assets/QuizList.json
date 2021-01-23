@@ -1,0 +1,139 @@
+[
+    {
+        "queryid":"Question1",
+        "question":"What guarantees type-safety in a collection?",
+        "option1":"Generics",
+        "option2":"Abstract classes",
+        "option3":"Interfaces",
+        "option4":"Collection",    
+        "answer":"Generics"
+       },
+
+	{
+        "queryid":"Question2",
+        "question":"HashSet internally uses?",
+        "option1":"Set",
+        "option2":"HashMap",
+        "option3":"List",
+        "option4":"Collection",    
+        "answer":"Set"
+       },
+
+	{
+        "queryid": "Question3",
+        "question":"The root interface of Java collection framework hierarchy is -",
+        "option1":"Collection",
+        "option2":"Collections",
+        "option3":"Root",
+        "option4":"List/Set",  
+        "answer":"List/Set"
+       },
+	{
+        "queryid": "Question4",
+        "question":"The most used interfaces from the collection framework are?",
+        "option1":"List",
+        "option2":"Map",
+		"option3":"Set",  
+        "option4":"None of these",
+        "answer":"Map"
+       },
+	{
+        "queryid": "Question5",
+        "question":"Which of those is synchronized?",
+        "option1":"ArrayList",
+        "option2":"LinkedList",
+		"option3":"Vector",  
+        "option4":"None of these",
+        "answer":"Vector"
+       },
+	{
+        "queryid": "Question6",
+        "question":"ArrayList implements that of the following?",
+        "option1":"List",
+        "option2":"RandomAccess",
+		"option3":"Cloneable",  
+        "option4":"All of these",
+        "answer":"All of these"
+       },
+	{
+        "queryid": "Question7",
+        "question":"Which of those permits the storage of the many null values?",
+        "option1":"Set",
+        "option2":"List",
+		"option3":"None of these",  
+        "option4":"All of these",
+        "answer":"All of these"
+       },
+	{
+        "queryid": "Question8",
+        "question":"nextIndex() and previousIndex() are methods of which interface?",
+        "option1":"IndexIterator",
+        "option2":"Iterator",
+		"option3":"ListIterator",  
+        "option4":"NextPreviousIterator",
+        "answer":"Iterator"
+       },
+	{
+        "queryid": "Question9",
+        "question":"Vector extends that of these?",
+        "option1":"ArrayList",
+        "option2":"LinkedList",
+		"option3":"AbstractList",  
+        "option4":"None of these",
+        "answer":"AbstractList"
+       },
+	{
+        "queryid": "Question10",
+        "question":"LinkedList implements?",
+        "option1":"Deque",
+        "option2":"List",
+		"option3":"None of the above",  
+        "option4":"Both of the above",
+        "answer":"Both of the above"
+       },
+	{
+        "queryid": "Question11",
+        "question":"In Iterator, nextElement() method of Enumeration has been changed to:",
+        "option1":"next()",
+        "option2":"getNext()",
+		"option3":"returnNext()",  
+        "option4":"name remains same",
+        "answer":"name remains same"
+       },
+	{
+        "queryid": "Question12",
+        "question":"Enumeration returned by Vector is?",
+        "option1":"fail-fast",
+        "option2":"fail-safe",
+		"option3":"none",  
+        "option4":"All of these",
+        "answer":"fail-fast"
+       },
+	{
+        "queryid": "Question13",
+        "question":"Which doesn't permit to store a null value?",
+        "option1":"TreeSet",
+        "option2":"LinkedHashSet",
+		"option3":"HashSet",  
+        "option4":"None of these",
+        "answer":"TreeSet"
+       },
+	{
+        "queryid": "Question14",
+        "question":"What describes an algorithm performs in best, average or worse case scenarios?",
+        "option1":"Big-B",
+        "option2":"Big-O",
+	    "option3":"Big-Data",  
+        "option4":"Big-N",
+        "answer":"Big-O"
+       },
+	{
+        "queryid": "Question15",
+        "question":"What describes an algorithm performs in best, average or worse case scenarios?",
+        "option1":"Big-B",
+        "option2":"Big-O",
+		"option3":"Big-Data",  
+        "option4":"Big-N",
+        "answer":"Big-O"
+       }
+]
